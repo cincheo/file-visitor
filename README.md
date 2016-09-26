@@ -2,7 +2,7 @@
 
 This utility written in Java allows for visiting a set of files within a directory. It can be specialized to perform any job on the visited files.
 
-The main program takes a unique argument, which is the working directory. The workin directory should contain a configuration file written in JSON, that defines options.
+The main program takes a unique argument, which is the working directory. The working directory should contain a configuration file written in JSON, that defines options.
 
 Default options (which can be extended) are for visiting purpose.
 
