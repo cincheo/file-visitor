@@ -48,7 +48,7 @@ public class Main {
 	 *            args[0] contains the working directory
 	 */
 
-	public static <T extends Options> void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception {
 
 		File workingDirectory = new File(".");
 
