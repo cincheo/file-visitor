@@ -45,7 +45,7 @@ public class Main {
 	 * </pre>
 	 * 
 	 * @param args
-	 *            args[0] contains the working directory
+	 *            not used (reads the conf in the working directory)
 	 */
 
 	public static void main(String[] args) throws Exception {
