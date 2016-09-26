@@ -14,8 +14,16 @@ Default options (which can be extended) are for visiting purpose.
 
 ## How to use
 
-This file visitor does not do anything by itself. You can either modify it under the terms of the licence to adapt it to your own needs, or you can use it as is and extend the appropriate classes to create a new utility on the top of it.
+This file visitor does not do anything by itself (it just prints out the visited files). Here is how to launch on the project directory using the local ``file_visitor.json`` configuration (visits all the files excluding the .settings directory).
+
+```bash
+clone https://github.com/cincheo/file-visitor.git
+cd file-visitor
+mvn exec:exec -Ddir=.
+```
+
+You can either modify it under the terms of the licence to adapt it to your own needs, or you can use it as is and extend the appropriate classes to create a new utility on the top of it.
 
 ## Licence
 
-Apache 2.
+Open Source Apache 2
