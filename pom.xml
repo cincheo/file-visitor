@@ -54,4 +54,18 @@
 			<version>3.3.2</version>
 		</dependency>
 	</dependencies>
+	
+	<!-- Use the JSweet repo (should have a Cincheo repo at some point) -->
+    <distributionManagement>
+        <repository>
+            <id>jsweet-release</id>
+            <name>libs-release</name>
+            <url>http://repository.jsweet.org/artifactory/libs-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>jsweet-snapshots</id>
+            <name>libs-snapshot</name>
+            <url>http://repository.jsweet.org/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
