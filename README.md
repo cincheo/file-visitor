@@ -1,28 +1,11 @@
 # file-visitor
 
-This utility written in Java allows for visiting a set of files within a directory. It can be specialized to perform any job on the visited files.
-
-The main program takes a unique argument, which is the working directory. The working directory should contain a configuration file written in JSON, that defines options.
-
-Default options (which can be extended) are for visiting purpose.
-
-- ``in``: the root directory to be visited (relative to the working directory)
--	``includeFilter`` [optional]: the filter to be used to include files (example: ``*.java``)
--	``includeDirFilter`` [optional]: the filter to be used to include directories
--	``excludeFilter`` [optional]: the filter to be used to exclude files (example: ``*.js``)
--	``excludeDirFilter`` [optional]: the filter to be used to exclude directories
+This utility written in Java allows for visiting a set of files within a directory an apply bulk action written in so-called file visitors. It can be specialized to perform any job on the visited files.
 
 ## How to use
 
-This file visitor does not do anything by itself (it just prints out the visited files). Here is how to launch on the project directory using the local ``file_visitor.json`` configuration (visits all the files excluding the .settings directory).
-
-```bash
-clone https://github.com/cincheo/file-visitor.git
-cd file-visitor
-mvn exec:exec -Ddir=.
-```
-
-You can either modify it under the terms of the licence to adapt it to your own needs, or you can use it as is and extend the appropriate classes to create a new utility on the top of it.
+- Implement the ``FileVisitor`` interface.
+- Invoke the ``FileVisitor.scan(root, fileVisitors)`` method, where ``root`` is the root file to be scanned, and ``fileVisitors`` are you ``FileVisitor`` implementations.
 
 ## Licence
 
